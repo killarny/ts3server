@@ -1,0 +1,11 @@
+server:
+  build: .
+  ports:
+    - 9987:9987/udp
+    - 30033:30033
+    - 10011:10011
+  volumes:
+    - /var/teamspeak:/data
+    - /var/teamspeak/files:/data/files
+    - /var/teamspeak/logs:/data/logs
+  restart: always
