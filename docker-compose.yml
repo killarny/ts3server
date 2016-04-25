@@ -8,4 +8,4 @@ server:
     - /var/teamspeak:/data
     - /var/teamspeak/files:/data/files
     - /var/teamspeak/logs:/data/logs
-  restart: always
+  restart: unless-stopped
