@@ -1,5 +1,5 @@
 FROM debian:latest
-ENV ts3_version=3.0.12.3
+ENV ts3_version=3.0.12.4
 RUN apt-get update -qq && \
     DEBIAN_FRONTEND=noninteractive apt-get install -qqy bzip2 wget && \
     apt-get clean && \
